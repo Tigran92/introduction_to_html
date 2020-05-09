@@ -21,8 +21,8 @@ const tinasFollowers = ["Rose", "Dave", "Jim"];
 
 let mutualFollowers = [];
 
-for (i1 = 0; i1 < bobsFollowers.length; i1++) {
-  for (j = 0; j < tinasFollowers.length; j++) {
+for (let i1 = 0; i1 < bobsFollowers.length; i1++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
     if (tinasFollowers[j] === bobsFollowers[i1]) {
       mutualFollowers.push(bobsFollowers[i1]);
     }
