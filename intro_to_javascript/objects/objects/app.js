@@ -127,6 +127,42 @@ remotelyDisable(spaceship4);
 
 console.log(spaceship4);
 
+//Looping Through Objects
+let spaceship5 = {
+    crew: {
+    captain: { 
+        name: 'Lily', 
+        degree: 'Computer Engineering', 
+        cheerTeam() { console.log('You got this!') } 
+        },
+    'chief officer': { 
+        name: 'Dan', 
+        degree: 'Aerospace Engineering', 
+        agree() { console.log('I agree, captain!') } 
+        },
+    medic: { 
+        name: 'Clementine', 
+        degree: 'Physics', 
+        announce() { console.log(`Jets on!`) } },
+    translator: {
+        name: 'Shauna', 
+        degree: 'Conservation Science', 
+        powerFuel() { console.log('The tank is full!') } 
+        }
+    }
+}; 
+
+//Iterating through the spaceship.crew and listing crew roles and names.
+for (let crewMember in spaceship5.crew) {
+  console.log(`${crewMember}: ${spaceship5.crew[crewMember].name}`)
+};
+
+//Iterating through the spaceship.crew and listing crew names and degrees 
+for (let crewPerson in spaceship5.crew) {
+  console.log(`${spaceship5.crew[crewPerson].name}: ${spaceship5.crew[crewPerson].degree}`)
+};
+
+
 
 
 
