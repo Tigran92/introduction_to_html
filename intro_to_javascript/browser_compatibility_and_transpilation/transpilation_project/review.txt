@@ -1,0 +1,13 @@
+Instructions:
+
+1. npm init - to create package.json in the root directory
+
+2. npm install babel-cli -D and babel-preset-env -D - to install a package and add it do devDependencies in one step
+
+3. touch .babelrc - add .babelrc to the project file 
+
+4. copy the following into the .babelrc file: - {"presets": ["env"]} - preset your local project’s config to "env".
+
+5. Open package.json, and add the following code below the "test" script: - "build": "babel src -d lib" - "build" script uses Babel to transpile JavaScript code inside of the src folder and write it to a folder called lib.
+
+6. npm run build  - to transpile the code in src and write it to lib.
